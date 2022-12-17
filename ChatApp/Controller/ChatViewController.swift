@@ -32,8 +32,8 @@ class ChatViewController: UIViewController {
         
         let appearance = UINavigationBarAppearance()
         appearance.configureWithOpaqueBackground()
-        appearance.backgroundColor = UIColor(named: "BrandPurple")// your colour here
-
+        appearance.backgroundColor = UIColor(named: "BrandPurple")
+        
         navigationController?.navigationBar.standardAppearance = appearance
         navigationController?.navigationBar.scrollEdgeAppearance = appearance
 

@@ -13,6 +13,7 @@ class RegisterViewController: UIViewController {
     
     @IBOutlet weak var emailTextfield: UITextField!
     @IBOutlet weak var passwordTexfield: UITextField!
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         let appearance = UINavigationBarAppearance()
@@ -23,16 +24,19 @@ class RegisterViewController: UIViewController {
         navigationController?.navigationBar.scrollEdgeAppearance = appearance
 
         super.viewDidLoad()
+        spinner.hidesWhenStopped = true
     }
 
     @IBAction func registerPressed(_ sender: UIButton) {
         
         if let email = emailTextfield.text, let password = passwordTexfield.text {
+            spinner.startAnimating()
             Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
                 if let e = error {
                     print(e)
                 } else {
                     self.performSegue(withIdentifier: "registerToChat", sender: self)
+                    self.spinner.stopAnimating()
                 }
             }
         }
