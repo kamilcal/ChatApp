@@ -89,9 +89,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VgR-eM-pee">
-                                <rect key="frame" x="153.5" y="334" width="107" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VgR-eM-pee">
+                                <rect key="frame" x="153.5" y="330" width="107" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Register">
@@ -115,15 +114,17 @@
                                     <constraint firstAttribute="height" constant="50" id="ebJ-5h-Rp1"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="continue" secureTextEntry="YES"/>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yIJ-SA-FvU"/>
                         <color key="backgroundColor" name="BrandLightBlue"/>
                         <constraints>
+                            <constraint firstItem="VgR-eM-pee" firstAttribute="top" secondItem="JWk-ck-vts" secondAttribute="bottom" constant="58" id="Alh-gr-auk"/>
                             <constraint firstItem="JWk-ck-vts" firstAttribute="leading" secondItem="yIJ-SA-FvU" secondAttribute="leading" constant="50" id="Cew-cE-Bkd"/>
                             <constraint firstItem="so7-4A-JVd" firstAttribute="centerX" secondItem="Zvg-Ui-u6S" secondAttribute="centerX" id="FKw-AD-flw"/>
                             <constraint firstItem="JWk-ck-vts" firstAttribute="centerX" secondItem="Zvg-Ui-u6S" secondAttribute="centerX" id="HyK-eG-nim"/>
+                            <constraint firstItem="VgR-eM-pee" firstAttribute="centerX" secondItem="JWk-ck-vts" secondAttribute="centerX" id="JTz-Vp-gMz"/>
                             <constraint firstItem="yIJ-SA-FvU" firstAttribute="trailing" secondItem="so7-4A-JVd" secondAttribute="trailing" constant="50" id="Ktn-JK-u58"/>
                             <constraint firstItem="yIJ-SA-FvU" firstAttribute="trailing" secondItem="JWk-ck-vts" secondAttribute="trailing" constant="50" id="PkV-Q4-B37"/>
                             <constraint firstItem="JWk-ck-vts" firstAttribute="top" secondItem="so7-4A-JVd" secondAttribute="bottom" constant="30" id="ggs-hm-0G7"/>
@@ -238,7 +239,7 @@
                                     <action selector="sendPressed:" destination="qWS-gz-lU9" eventType="touchUpInside" id="KuN-yE-1tT"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="bGf-7J-a1y">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="bGf-7J-a1y">
                                 <rect key="frame" x="0.0" y="86" width="414" height="724"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
@@ -313,7 +314,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="NMj-eu-vz4"/>
+        <segue reference="euo-X0-8Tx"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="paperplane.fill" catalog="system" width="128" height="119"/>
